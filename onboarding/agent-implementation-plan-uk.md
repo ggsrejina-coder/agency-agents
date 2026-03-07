@@ -18,11 +18,11 @@
 
 1. **project-manager-senior** — декомпозиція задач, scope, пріоритети.
 2. **agents-orchestrator** — координує пайплайн і handoff між агентами.
-3. **engineering-frontend-developer** або **engineering-backend-architect** — основна реалізація.
-4. **testing-evidence-collector** — перевірка із доказами (скріни/артефакти).
+3. **Frontend Developer** або **Backend Architect** — основна реалізація.
+4. **EvidenceQA** — перевірка із доказами (скріни/артефакти).
 5. **testing-reality-checker** — фінальний quality gate перед релізом.
 
-> Якщо у вас мобільний продукт — замініть frontend на `engineering-mobile-app-builder`.
+> Якщо у вас мобільний продукт — замініть **Frontend Developer** на **Mobile App Builder**.
 
 ## 3) Базова операційна модель (MVP-ready)
 
@@ -33,7 +33,7 @@
 ### Фаза B — Delivery Loop
 - Orchestrator бере 1 задачу із backlog.
 - Dev агент реалізує **тільки** цю задачу.
-- Evidence Collector валідовує і дає PASS/FAIL.
+- **EvidenceQA** валідовує і дає PASS/FAIL.
 - Якщо FAIL — повернення в розробку з конкретним фідбеком.
 
 ### Фаза C — Release Gate
