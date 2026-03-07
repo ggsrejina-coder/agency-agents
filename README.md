@@ -43,7 +43,7 @@ Each agent file contains:
 
 Browse the agents below and copy/adapt the ones you need!
 
-### 🧭 Agent Implementation Blueprint (New)
+### 🧭 Agent Implementation Blueprint
 
 If you want a practical rollout plan and starter instructions for your first agent team:
 
