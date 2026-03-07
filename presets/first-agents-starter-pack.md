@@ -23,11 +23,11 @@
 ```text
 Працюємо в режимі агентної команди.
 Склад команди:
-1) project-manager-senior
-2) agents-orchestrator
-3) engineering-frontend-developer
-4) testing-evidence-collector
-5) testing-reality-checker
+1) Project Manager (Senior)
+2) Agents Orchestrator
+3) Frontend Developer
+4) EvidenceQA
+5) Reality Checker
 
 Правила:
 - Спочатку PM готує tasklist із P0/P1/P2 + acceptance criteria.
