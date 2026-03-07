@@ -22,7 +22,7 @@
 4. **EvidenceQA** — перевірка із доказами (скріни/артефакти).
 5. **testing-reality-checker** — фінальний quality gate перед релізом.
 
-> Якщо у вас мобільний продукт — замініть frontend на **Mobile App Builder**.
+> Якщо у вас мобільний продукт — замініть **Frontend Developer** на **Mobile App Builder**.
 
 ## 3) Базова операційна модель (MVP-ready)
 
