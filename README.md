@@ -43,13 +43,14 @@ Each agent file contains:
 
 Browse the agents below and copy/adapt the ones you need!
 
-### Option 3: Starter Playbooks (New)
+### 🧭 Agent Implementation Blueprint
 
-Want a practical first implementation flow with instructions?
+If you want a practical rollout plan and starter instructions for your first agent team:
 
-- 📘 [First Agents Setup (UA)](playbooks/first-agents-setup.md)
-- 🧭 [Agent Orchestration Instructions (UA)](playbooks/agent-orchestration-instructions.md)
-- ⚙️ [Initial Agent Stack Config](playbooks/initial-agent-stack.yaml)
+- 🇺🇦 [Agent implementation plan (UA)](onboarding/agent-implementation-plan-uk.md)
+- 🧰 [First agents starter pack](presets/first-agents-starter-pack.md)
+
+These guides provide a concrete execution model: **PM → Orchestrator → Dev ↔ QA loop → Release Gate**.
 
 ---
 
