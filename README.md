@@ -43,6 +43,14 @@ Each agent file contains:
 
 Browse the agents below and copy/adapt the ones you need!
 
+### Option 3: Starter Playbooks (New)
+
+Want a practical first implementation flow with instructions?
+
+- 📘 [First Agents Setup (UA)](playbooks/first-agents-setup.md)
+- 🧭 [Agent Orchestration Instructions (UA)](playbooks/agent-orchestration-instructions.md)
+- ⚙️ [Initial Agent Stack Config](playbooks/initial-agent-stack.yaml)
+
 ---
 
 ## 🎨 The Agency Roster

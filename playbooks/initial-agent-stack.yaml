@@ -1,0 +1,94 @@
+version: 1
+stack_name: agency-starter-mvp
+language: uk
+objective: >-
+  Базовий multi-agent pipeline для команди, яка запускає перший цикл
+  аналіз -> архітектура -> реалізація -> QA -> фінальна валідація.
+
+agents:
+  - id: pm
+    name: project-manager-senior
+    source: project-management/project-manager-senior.md
+    responsibilities:
+      - Декомпозиція вимог у backlog
+      - Acceptance criteria та пріоритети
+      - Виявлення ризиків і залежностей
+    output_contract:
+      - backlog
+      - acceptance_criteria
+      - risks
+
+  - id: ux_arch
+    name: design-ux-architect
+    source: design/design-ux-architect.md
+    responsibilities:
+      - UX/IA architecture
+      - Handoff-пакет для розробки
+    output_contract:
+      - ux_architecture
+      - edge_cases
+      - implementation_notes
+
+  - id: dev
+    name: engineering-senior-developer
+    source: engineering/engineering-senior-developer.md
+    responsibilities:
+      - Імплементація задач згідно backlog
+      - Локальна самоперевірка перед QA
+    output_contract:
+      - code_changes
+      - implementation_report
+
+  - id: qa
+    name: testing-api-tester
+    source: testing/testing-api-tester.md
+    responsibilities:
+      - Перевірка acceptance criteria
+      - Функціональна валідація API/інтеграцій
+    output_contract:
+      - validation_matrix
+      - defects
+
+  - id: evidence
+    name: testing-evidence-collector
+    source: testing/testing-evidence-collector.md
+    responsibilities:
+      - Формування доказової бази
+      - Артефакти: логи, скріни, результати запусків
+    output_contract:
+      - evidence_pack
+
+  - id: gate
+    name: testing-reality-checker
+    source: testing/testing-reality-checker.md
+    responsibilities:
+      - Фінальна незалежна оцінка
+      - Рішення READY або NEEDS_WORK
+    output_contract:
+      - release_decision
+      - blocking_issues
+
+workflow:
+  sequence:
+    - pm
+    - ux_arch
+    - dev
+    - qa
+    - evidence
+    - gate
+
+  retry_policy:
+    max_retries_per_task: 2
+    on_fail: return_to_dev
+
+  escalation:
+    condition: "same_criteria_failed_twice"
+    target_agent: pm
+
+reporting:
+  cadence: per_task
+  format:
+    - summary
+    - completed_items
+    - failed_checks
+    - next_action
