@@ -33,7 +33,7 @@
 ### Фаза B — Delivery Loop
 - Orchestrator бере 1 задачу із backlog.
 - Dev агент реалізує **тільки** цю задачу.
-- Evidence Collector валідовує і дає PASS/FAIL.
+- **EvidenceQA** валідовує і дає PASS/FAIL.
 - Якщо FAIL — повернення в розробку з конкретним фідбеком.
 
 ### Фаза C — Release Gate
