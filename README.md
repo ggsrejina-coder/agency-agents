@@ -43,6 +43,15 @@ Each agent file contains:
 
 Browse the agents below and copy/adapt the ones you need!
 
+### 🧭 Agent Implementation Blueprint (New)
+
+If you want a practical rollout plan and starter instructions for your first agent team:
+
+- 🇺🇦 [Agent implementation plan (UA)](onboarding/agent-implementation-plan-uk.md)
+- 🧰 [First agents starter pack](presets/first-agents-starter-pack.md)
+
+These guides provide a concrete execution model: **PM → Orchestrator → Dev ↔ QA loop → Release Gate**.
+
 ---
 
 ## 🎨 The Agency Roster
